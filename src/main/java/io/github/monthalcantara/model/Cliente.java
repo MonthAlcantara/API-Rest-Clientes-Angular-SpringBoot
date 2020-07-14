@@ -26,5 +26,7 @@ public class Cliente {
     @NotEmpty(message = "Obrigatório informar o CPF")
     private String cpf;
 
+    @Column(name = "data_cadastro")
     private LocalDate dataCadastro;
+
 }
