@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
@@ -20,12 +21,13 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @NotEmpty(message = "O campo nome não pode ser vazio")
+    @NotEmpty(message = "{campo.nome.obrigatorio}")
     @Column(nullable = false, length = 150)
     private String nome;
 
     @Column(nullable = false, length = 11)
-    @NotEmpty(message = "Obrigatório informar o CPF")
+    @NotEmpty(message = "{campo.cpf.obrigatorio}")
+    @CPF(message = "{campo.cpf.invalido}")
     private String cpf;
 
     @Column(name = "data_cadastro", updatable = false)
