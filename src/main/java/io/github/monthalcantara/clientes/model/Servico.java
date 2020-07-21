@@ -18,8 +18,8 @@ public class Servico {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-   @NotEmpty(message = "Nescessário informar a descrição")
-   @Column(length = 120, nullable = false)
+    @NotEmpty(message = "Nescessário informar a descrição")
+    @Column(length = 120, nullable = false)
     private String descricao;
 
     @ManyToOne
