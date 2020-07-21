@@ -1,11 +1,12 @@
 package io.github.monthalcantara.clientes.service.interfaces;
 
 import io.github.monthalcantara.clientes.model.Servico;
+import org.springframework.data.domain.Example;
 
 import java.util.List;
 
 public interface ServicoService {
-    List<Servico> findAll();
+    List<Servico> findAll(Example example);
 
     Servico findById(Integer id);
 

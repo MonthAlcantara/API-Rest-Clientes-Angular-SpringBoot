@@ -25,7 +25,7 @@ public class ServicoController {
                 .withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING)
                 .withIgnoreCase();
         Example example = Example.of(servico, matcher);
-        return servicoService.findAll();
+        return servicoService.findAll(example);
     }
 
     @GetMapping("/{id}")
