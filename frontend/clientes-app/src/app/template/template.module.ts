@@ -6,13 +6,16 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
-  declarations: [NavbarComponent, SidebarComponent],
-  imports: [
-    CommonModule,
+  declarations: [
+    NavbarComponent,
     SidebarComponent
   ],
+  imports: [
+    CommonModule
+  ],
   exports:[
-    NavbarComponent
-  ]
+    NavbarComponent,
+    SidebarComponent
+      ]
 })
 export class TemplateModule { }
