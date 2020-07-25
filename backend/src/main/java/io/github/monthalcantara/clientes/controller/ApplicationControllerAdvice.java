@@ -17,7 +17,7 @@ public class ApplicationControllerAdvice {
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ApiError handleValidationErros(MethodArgumentNotValidException ex){
+    public ApiError handleValidationError(MethodArgumentNotValidException ex){
         BindingResult bindingResult = ex.getBindingResult();
         List<String> messages = bindingResult.getAllErrors()
                 .stream().map(objectError -> objectError.getDefaultMessage())
@@ -29,7 +29,7 @@ public class ApplicationControllerAdvice {
 
     @ExceptionHandler(RecursoNotFound.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ApiError handleNotFoundErros(RecursoNotFound ex){
+    public ApiError handleNotFoundError(RecursoNotFound ex){
                return new ApiError(ex.getMessage());
 
     }
