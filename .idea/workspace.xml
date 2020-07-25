@@ -19,8 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b08a6ef-e22a-4975-8e18-39088be45aff" name="Default Changelist" comment="reorganizção codigo">
+    <list default="true" id="7b08a6ef-e22a-4975-8e18-39088be45aff" name="Default Changelist" comment="Padronização nomeclatura metodos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/repository/ServicoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/repository/ServicoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/service/implementacao/ServicoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/service/implementacao/ServicoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/service/interfaces/ServicoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/service/interfaces/ServicoService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +46,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="ClientesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -83,7 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1595369304118</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="reorganizção codigo">
+      <created>1595529725475</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595529725475</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Padronização nomeclatura metodos">
+      <created>1595636450206</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595636450206</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,7 +117,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reorganizção codigo" />
-    <option name="LAST_COMMIT_MESSAGE" value="reorganizção codigo" />
+    <MESSAGE value="Padronização nomeclatura metodos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Padronização nomeclatura metodos" />
   </component>
   <component name="WindowStateProjectService">
     <state x="363" y="98" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595518012931">
@@ -111,13 +129,29 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595369027960" />
-    <state x="192" y="0" key="SettingsEditor" timestamp="1595528929421">
+    <state width="1286" height="2" key="GridCell.Tab.0.bottom" timestamp="1595529812461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595528929421" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1595369307901">
+    <state width="1286" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595529812461" />
+    <state width="1286" height="2" key="GridCell.Tab.0.center" timestamp="1595529812461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595369307901" />
+    <state width="1286" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595529812461" />
+    <state width="1286" height="2" key="GridCell.Tab.0.left" timestamp="1595529812461">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595529812461" />
+    <state width="1286" height="2" key="GridCell.Tab.0.right" timestamp="1595529812461">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595529812461" />
+    <state x="192" y="0" key="SettingsEditor" timestamp="1595637285757">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595637285757" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1595636453649">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595636453649" />
   </component>
 </project>
