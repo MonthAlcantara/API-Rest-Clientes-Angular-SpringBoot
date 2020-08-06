@@ -2,6 +2,7 @@ package io.github.monthalcantara.clientes.service.interfaces;
 
 import io.github.monthalcantara.clientes.model.Cliente;
 import org.springframework.data.domain.Example;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 

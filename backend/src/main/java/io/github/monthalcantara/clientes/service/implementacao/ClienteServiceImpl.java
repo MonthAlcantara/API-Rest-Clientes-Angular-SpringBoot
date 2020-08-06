@@ -29,11 +29,8 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public void delete(Integer id) {
-        Optional<Cliente> clienteOptional = clienteRepository.findById(id);
-        if(clienteOptional.isPresent()){
-            clienteRepository.deleteById(id);
-        }
-
+        findById(id);
+        clienteRepository.deleteById(id);
     }
 
     @Override
@@ -47,6 +44,6 @@ public class ClienteServiceImpl implements ClienteService {
     public Cliente findById(Integer id) {
         return clienteRepository
                 .findById(id)
-                .orElseThrow(() -> new RecursoNotFound("Cliente não encontrado"));
+                .orElseThrow(() -> new RecursoNotFound("Cliente não encontrado pelo Id informado"));
     }
 }
