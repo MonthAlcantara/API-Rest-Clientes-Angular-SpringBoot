@@ -19,6 +19,7 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public List<Cliente> findAll(Example example) {
+
         return clienteRepository.findAll(example);
     }
 
