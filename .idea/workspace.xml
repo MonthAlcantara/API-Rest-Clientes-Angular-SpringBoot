@@ -19,11 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b08a6ef-e22a-4975-8e18-39088be45aff" name="Default Changelist" comment="Padronização nomeclatura metodos">
+    <list default="true" id="7b08a6ef-e22a-4975-8e18-39088be45aff" name="Default Changelist" comment="Refatoradas classes de serviço">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/repository/ServicoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/repository/ServicoRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/service/implementacao/ServicoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/service/implementacao/ServicoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/service/interfaces/ServicoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/service/interfaces/ServicoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/clientes-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/clientes-app/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/clientes-app/src/app/template/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/clientes-app/src/app/template/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/clientes-app/src/app/template/template.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/clientes-app/src/app/template/template.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595636450206</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refatoradas classes de serviço">
+      <created>1595637373049</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595637373049</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,17 +125,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reorganizção codigo" />
     <MESSAGE value="Padronização nomeclatura metodos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Padronização nomeclatura metodos" />
+    <MESSAGE value="Refatoradas classes de serviço" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refatoradas classes de serviço" />
   </component>
   <component name="WindowStateProjectService">
     <state x="363" y="98" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595518012931">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="98" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1595518012931" />
-    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1595369027960">
+    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1595681485843">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595369027960" />
+    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595681485843" />
     <state width="1286" height="2" key="GridCell.Tab.0.bottom" timestamp="1595529812461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -145,13 +153,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1286" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595529812461" />
-    <state x="192" y="0" key="SettingsEditor" timestamp="1595637285757">
+    <state x="192" y="0" key="SettingsEditor" timestamp="1595681391981">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595637285757" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1595636453649">
+    <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595681391981" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1595637375502">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595636453649" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595637375502" />
   </component>
 </project>
