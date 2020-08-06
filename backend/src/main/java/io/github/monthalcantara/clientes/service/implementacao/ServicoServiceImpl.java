@@ -41,6 +41,7 @@ public class ServicoServiceImpl implements ServicoService {
 
     @Override
     public void deleteById(Integer id) {
+        findById(id);
         servicoRepository.deleteById(id);
     }
 }
