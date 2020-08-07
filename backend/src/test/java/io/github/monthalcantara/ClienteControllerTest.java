@@ -53,7 +53,6 @@ public class ClienteControllerTest {
                 .andExpect(jsonPath("id").isNotEmpty())
                 .andExpect(jsonPath("nome").value(cliente.getNome()))
                 .andExpect(jsonPath("cpf").value(cliente.getCpf()));
-
     }
 
     @Test

@@ -26,24 +26,23 @@ public class ClienteController {
     ModelMapper modelMapper;
 
     @GetMapping
+    @ResponseStatus(HttpStatus.OK)
     public List<ClienteDTO> findAll(Cliente cliente) {
         ExampleMatcher matcher = ExampleMatcher.matching()
                 .withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING)
                 .withIgnoreCase();
         Example example = Example.of(cliente, matcher);
         List<Cliente> clientes = clienteService.findAll(example);
-        return clientes.stream().map(c -> modelMapper.map(c, ClienteDTO.class)).collect(Collectors.toList());
-
-
+        return clientes.stream()
+                .map(c -> modelMapper.map(c, ClienteDTO.class))
+                .collect(Collectors.toList());
     }
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
     public ClienteDTO buscarPeloId(@PathVariable Integer id) {
-
         return modelMapper
                 .map(clienteService.findById(id), ClienteDTO.class);
-
     }
 
     @PostMapping

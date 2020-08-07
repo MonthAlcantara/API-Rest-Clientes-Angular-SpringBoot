@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_07_08_2020_09_54_[Default_Changelist]" date="1596804867699" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_08_2020_09_54_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 07/08/2020 09:54 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="backend/target/classes/io/github/monthalcantara/clientes/service/implementacao/ClienteServiceImpl.class" />
+    <option name="AFTER_PATH" value="backend/target/classes/io/github/monthalcantara/clientes/service/implementacao/ClienteServiceImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_08_2020_09_54_[Default_Changelist]/ClienteServiceImpl.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="backend/target/classes/io/github/monthalcantara/ClientesApplication.class" />
+    <option name="AFTER_PATH" value="backend/target/classes/io/github/monthalcantara/ClientesApplication.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_08_2020_09_54_[Default_Changelist]/ClientesApplication.class" />
+  </binary>
+</changelist>
