@@ -1,7 +1,6 @@
 package io.github.monthalcantara;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.github.monthalcantara.clientes.dto.ClienteDTO;
 import io.github.monthalcantara.clientes.model.Cliente;
 import io.github.monthalcantara.clientes.service.interfaces.ClienteService;
 import org.junit.jupiter.api.DisplayName;
@@ -16,13 +15,11 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-//@ExtendWith(SpringExtension.class)
-//@ActiveProfiles("test")
-//@WebMvcTest
+
 @AutoConfigureMockMvc
 @SpringBootTest
 public class ClienteControllerTest {

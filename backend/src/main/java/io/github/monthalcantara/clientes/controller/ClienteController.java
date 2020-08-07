@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/clientes")
-public class ClienteController{
+public class ClienteController {
 
     @Autowired
     ClienteService clienteService;
@@ -26,7 +26,7 @@ public class ClienteController{
     ModelMapper modelMapper;
 
     @GetMapping
-    public List<ClienteDTO> findAll(Cliente cliente){
+    public List<ClienteDTO> findAll(Cliente cliente) {
         ExampleMatcher matcher = ExampleMatcher.matching()
                 .withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING)
                 .withIgnoreCase();
@@ -39,28 +39,34 @@ public class ClienteController{
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public ClienteDTO buscarPeloId(@PathVariable Integer id){
-        return modelMapper.map(clienteService.findById(id), ClienteDTO.class);
+    public ClienteDTO buscarPeloId(@PathVariable Integer id) {
+
+        return modelMapper
+                .map(clienteService.findById(id), ClienteDTO.class);
 
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ClienteDTO salvar(@RequestBody @Valid Cliente cliente){
-
-        return modelMapper.map(clienteService.save(cliente), ClienteDTO.class);
+    public ClienteDTO salvar(@RequestBody @Valid Cliente cliente) {
+        return modelMapper
+                .map(clienteService.save(cliente), ClienteDTO.class);
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteCliente(@PathVariable Integer id){
+    public void deleteCliente(@PathVariable Integer id) {
+
         clienteService.delete(id);
+
     }
 
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void updateCliente(@PathVariable Integer id, @RequestBody Cliente cliente){
+    public void updateCliente(@PathVariable Integer id, @RequestBody Cliente cliente) {
+
         clienteService.update(id, cliente);
+
     }
 
 }
