@@ -40,7 +40,7 @@ public class ServicoController {
     return servicoService.save(servico);
     }
 
-    @PutMapping("/id")
+    @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
     public Servico updateServico(@PathVariable Integer id, @RequestBody Servico servico){
         return servicoService.updateServico(id, servico);

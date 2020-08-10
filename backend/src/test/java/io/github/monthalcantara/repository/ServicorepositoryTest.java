@@ -1,4 +1,4 @@
-package io.github.monthalcantara;
+package io.github.monthalcantara.repository;
 
 import io.github.monthalcantara.clientes.exceptions.RecursoNotFound;
 import io.github.monthalcantara.clientes.model.Cliente;
