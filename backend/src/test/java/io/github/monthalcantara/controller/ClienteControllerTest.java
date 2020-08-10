@@ -1,4 +1,4 @@
-package io.github.monthalcantara;
+package io.github.monthalcantara.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.monthalcantara.clientes.model.Cliente;
