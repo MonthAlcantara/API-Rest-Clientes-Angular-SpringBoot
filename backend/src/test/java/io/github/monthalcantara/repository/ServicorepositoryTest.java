@@ -106,5 +106,4 @@ public class ServicorepositoryTest {
         Assertions.assertThat(servico.getId()).isEqualTo(servicoSalvo.getId());
 
     }
-
 }

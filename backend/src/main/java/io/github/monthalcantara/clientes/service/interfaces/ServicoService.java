@@ -15,4 +15,5 @@ public interface ServicoService {
     Servico updateServico(Integer id, Servico servico);
 
     void deleteById(Integer id);
+
 }

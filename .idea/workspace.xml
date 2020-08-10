@@ -19,13 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b08a6ef-e22a-4975-8e18-39088be45aff" name="Default Changelist" comment="Atualizados testes unitários controller de serviços">
+    <list default="true" id="7b08a6ef-e22a-4975-8e18-39088be45aff" name="Default Changelist" comment="Atualizados testes de integração Repository, Service de Clientes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/io/github/monthalcantara/ClienteControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/io/github/monthalcantara/controller/ClienteControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/io/github/monthalcantara/ClienteRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/io/github/monthalcantara/repository/ClienteRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/test-classes/io/github/monthalcantara/ClienteControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/test-classes/io/github/monthalcantara/ClienteRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/test-classes/io/github/monthalcantara/repository/ClienteRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/test-classes/io/github/monthalcantara/repository/ClienteRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/io/github/monthalcantara/clientes/repository/ServicoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/io/github/monthalcantara/clientes/repository/ServicoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/io/github/monthalcantara/clientes/service/implementacao/ServicoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/io/github/monthalcantara/clientes/service/implementacao/ServicoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/io/github/monthalcantara/clientes/service/interfaces/ServicoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/io/github/monthalcantara/clientes/service/interfaces/ServicoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/io/github/monthalcantara/repository/ServicorepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/io/github/monthalcantara/repository/ServicorepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,22 +105,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServicoControllerTest.deveDeletarCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="clientes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.monthalcantara.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.monthalcantara.controller" />
-      <option name="MAIN_CLASS_NAME" value="io.github.monthalcantara.controller.ServicoControllerTest" />
-      <option name="METHOD_NAME" value="deveDeletarCliente" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ServicorepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="clientes" />
       <extension name="coverage">
@@ -137,13 +120,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServicorepositoryTest.testado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clientes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.monthalcantara.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.monthalcantara.repository" />
+      <option name="MAIN_CLASS_NAME" value="io.github.monthalcantara.repository.ServicorepositoryTest" />
+      <option name="METHOD_NAME" value="testado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ServicorepositoryTest" />
+        <item itemvalue="JUnit.ServicorepositoryTest.testado" />
         <item itemvalue="JUnit.ClienteRepositoryTest" />
         <item itemvalue="JUnit.ClienteRepositoryTest.deveSalvarNovoUsuario" />
         <item itemvalue="JUnit.ServicoControllerTest" />
-        <item itemvalue="JUnit.ServicoControllerTest.deveDeletarCliente" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597071847527</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Atualizados testes de integração Repository, Service de Clientes">
+      <created>1597072732352</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1597072732352</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +243,8 @@
     <MESSAGE value="Adicionado padrão DTO para recurso cliente" />
     <MESSAGE value="Adicionado teste post ao controller de Serviços" />
     <MESSAGE value="Atualizados testes unitários controller de serviços" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualizados testes unitários controller de serviços" />
+    <MESSAGE value="Atualizados testes de integração Repository, Service de Clientes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizados testes de integração Repository, Service de Clientes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596810566103">
@@ -253,36 +260,36 @@
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595681485843" />
     <state x="651" y="167" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596739773090" />
-    <state width="1877" height="208" key="GridCell.Tab.0.bottom" timestamp="1597072442526">
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom" timestamp="1597073916465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1322" height="235" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596756712665" />
-    <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597072442526" />
-    <state width="1877" height="208" key="GridCell.Tab.0.center" timestamp="1597072442526">
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597073916465" />
+    <state width="1877" height="208" key="GridCell.Tab.0.center" timestamp="1597073916465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1322" height="235" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596756712664" />
-    <state width="1877" height="208" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597072442526" />
-    <state width="1877" height="208" key="GridCell.Tab.0.left" timestamp="1597072442526">
+    <state width="1877" height="208" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597073916465" />
+    <state width="1877" height="208" key="GridCell.Tab.0.left" timestamp="1597073916465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1322" height="235" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596756712664" />
-    <state width="1877" height="208" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597072442526" />
-    <state width="1877" height="208" key="GridCell.Tab.0.right" timestamp="1597072442526">
+    <state width="1877" height="208" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597073916465" />
+    <state width="1877" height="208" key="GridCell.Tab.0.right" timestamp="1597073916465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1322" height="235" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596756712665" />
-    <state width="1877" height="208" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597072442526" />
+    <state width="1877" height="208" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597073916465" />
     <state x="270" y="0" key="SettingsEditor" timestamp="1596739392138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595681391981" />
     <state x="270" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596739392138" />
-    <state x="387" y="136" key="Vcs.Push.Dialog.v2" timestamp="1597071849734">
+    <state x="387" y="136" key="Vcs.Push.Dialog.v2" timestamp="1597072752106">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596753669170" />
-    <state x="387" y="136" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597071849734" />
+    <state x="387" y="136" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597072752106" />
     <state x="362" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596751520375">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

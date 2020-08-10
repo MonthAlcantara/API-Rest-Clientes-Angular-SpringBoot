@@ -23,7 +23,9 @@ public class ServicoServiceImpl implements ServicoService {
 
     @Override
     public Servico findById(Integer id) {
-        return servicoRepository.findById(id).orElseThrow(() -> new RecursoNotFound("Servico não encontrado"));
+        return servicoRepository
+                .findById(id)
+                .orElseThrow(() -> new RecursoNotFound("Servico não encontrado"));
     }
 
     @Override
@@ -33,8 +35,7 @@ public class ServicoServiceImpl implements ServicoService {
 
     @Override
     public Servico updateServico(Integer id, Servico servico) {
-        Servico servicoEncontrado = servicoRepository.findById(id)
-                .orElseThrow(() -> new RecursoNotFound("Servico não encontrado"));
+        Servico servicoEncontrado = findById(id);
         servico.setId(servicoEncontrado.getId());
         return servicoRepository.save(servico);
     }
