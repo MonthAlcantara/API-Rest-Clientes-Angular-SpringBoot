@@ -6,7 +6,6 @@ import io.github.monthalcantara.clientes.model.Servico;
 import io.github.monthalcantara.clientes.service.interfaces.ClienteService;
 import io.github.monthalcantara.clientes.service.interfaces.ServicoService;
 import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,27 +25,11 @@ public class ServicorepositoryTest {
     @Autowired
     ClienteService clienteService;
 
-    @BeforeEach
-    public void carregaContexto() {
-        cliente = Cliente.builder()
-                .cpf("16431910044")
-                .dataCadastro(LocalDateTime.parse("2020-08-06T07:34:35"))
-                .id(1)
-                .nome("Teste")
-                .build();
-
-        servico = Servico.builder()
-                .cliente(cliente)
-                .id(1)
-                .descricao("Teste")
-                .valor(BigDecimal.valueOf(1000))
-                .build();
-
-    }
-
     @Test
     @DisplayName("Deve criar um novo servico")
     public void deveCriarServico() {
+        cliente = geradorDeCliente();
+        servico = geradorDeServico();
         cliente = clienteService.save(cliente);
         servicoSalvo = servicoService.save(servico);
         Assertions.assertThat(servicoSalvo).isNotNull();
@@ -55,6 +38,8 @@ public class ServicorepositoryTest {
     @Test
     @DisplayName("Deve deletar um serviço")
     public void deveDeletarServico() {
+        cliente = geradorDeCliente();
+        servico = geradorDeServico();
         cliente = clienteService.save(cliente);
         servicoService.save(servico);
         servicoService.deleteById(servico.getId());
@@ -87,6 +72,8 @@ public class ServicorepositoryTest {
     @Test
     @DisplayName("Deve buscar serviço")
     public void deveBuscarServico() {
+        cliente = geradorDeCliente();
+        servico = geradorDeServico();
         cliente = clienteService.save(cliente);
         servico = servicoService.save(servico);
         servicoSalvo = servicoService.findById(servico.getId());
@@ -96,6 +83,8 @@ public class ServicorepositoryTest {
     @Test
     @DisplayName("Deve atualizar um serviço")
     public void deveAtualizarUmServico() {
+        cliente = geradorDeCliente();
+        servico = geradorDeServico();
         servicoSalvo = servicoService.save(servico);
         servicoSalvo.setDescricao("Teste2");
         servicoSalvo.setValor(BigDecimal.valueOf(2000));
@@ -105,5 +94,23 @@ public class ServicorepositoryTest {
         Assertions.assertThat(servico.getValor()).isNotEqualTo(servicoSalvo.getValor());
         Assertions.assertThat(servico.getId()).isEqualTo(servicoSalvo.getId());
 
+    }
+
+    private Servico geradorDeServico() {
+        return Servico.builder()
+                .cliente(cliente)
+                .id(1)
+                .descricao("Teste")
+                .valor(BigDecimal.valueOf(1000))
+                .build();
+    }
+
+    private Cliente geradorDeCliente() {
+        return Cliente.builder()
+                .cpf("16431910044")
+                .dataCadastro(LocalDateTime.parse("2020-08-06T07:34:35"))
+                .id(1)
+                .nome("Teste")
+                .build();
     }
 }
