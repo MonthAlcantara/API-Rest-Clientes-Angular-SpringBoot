@@ -1,5 +1,6 @@
 package io.github.monthalcantara.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.monthalcantara.clientes.model.Cliente;
 import io.github.monthalcantara.clientes.service.interfaces.ClienteService;
@@ -35,10 +36,10 @@ public class ClienteControllerTest {
     @Test
     @DisplayName("Deve criar um cliente com sucesso")
     public void deveCriarClienteTest() throws Exception {
-        Cliente cliente = Cliente.builder().id(1).cpf("16431910044").nome("Teste").build();
+        Cliente cliente = geradorDeCliente();
 
-        BDDMockito.given(clienteService.save(Mockito.any(Cliente.class)))
-                .willReturn(cliente);
+                BDDMockito.given(clienteService.save(Mockito.any(Cliente.class)))
+                        .willReturn(cliente);
 
         String json = new ObjectMapper().writeValueAsString(cliente);
 
@@ -57,9 +58,32 @@ public class ClienteControllerTest {
 
     @Test
     @DisplayName("Deve lançar erro criar um cliente sem dados suficientes")
-    public void naoDeveCriarClienteinvalidoTest() {
+    public void naoDeveCriarClienteInvalidoTest() throws Exception {
+        Cliente cliente = geradorDeCliente();
+        cliente.setCpf(null);
+
+        BDDMockito.given(clienteService.save(Mockito.any(Cliente.class)))
+                .willReturn(cliente);
+
+        String json = new ObjectMapper().writeValueAsString(cliente);
+
+        MockHttpServletRequestBuilder request = MockMvcRequestBuilders
+                .post(CLIENTE_API)
+                .contentType(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON)
+                .content(json);
+
+        mvc.perform(request)
+                .andExpect(status().isBadRequest());
 
     }
 
+    private Cliente geradorDeCliente() {
+        return Cliente.builder()
+                .id(1)
+                .cpf("16431910044")
+                .nome("Teste")
+                .build();
+    }
 
 }

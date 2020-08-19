@@ -117,9 +117,7 @@ public class ServicoControllerTest {
         servico = geradorDeServico();
 
         MockHttpServletRequestBuilder request = MockMvcRequestBuilders
-                .delete(SERVICO_API.concat("/" + servico.getId()))
-                .accept(MediaType.APPLICATION_JSON)
-                .contentType(MediaType.APPLICATION_JSON);
+                .delete(SERVICO_API.concat("/" + servico.getId()));
 
         mvc
                 .perform(request)

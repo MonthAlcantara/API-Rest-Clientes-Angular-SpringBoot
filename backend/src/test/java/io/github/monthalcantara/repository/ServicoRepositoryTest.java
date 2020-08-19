@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @SpringBootTest
-public class ServicorepositoryTest {
+public class ServicoRepositoryTest {
 
     Servico servico, servicoSalvo;
     Cliente cliente;
@@ -109,7 +109,7 @@ public class ServicorepositoryTest {
         return Cliente.builder()
                 .cpf("16431910044")
                 .dataCadastro(LocalDateTime.parse("2020-08-06T07:34:35"))
-                .id(1)
+                .id(11)
                 .nome("Teste")
                 .build();
     }
