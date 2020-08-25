@@ -20,7 +20,7 @@ public class Servico {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @NotEmpty(message = "Nescessário informar a descrição")
+    @NotEmpty(message = "Necessário informar a descrição")
     @Column(length = 120, nullable = false)
     private String descricao;
 
