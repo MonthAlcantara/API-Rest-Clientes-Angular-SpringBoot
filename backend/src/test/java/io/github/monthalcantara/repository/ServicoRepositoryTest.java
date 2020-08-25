@@ -29,8 +29,8 @@ public class ServicoRepositoryTest {
     @DisplayName("Deve criar um novo servico")
     public void deveCriarServico() {
         cliente = geradorDeCliente();
-        servico = geradorDeServico();
         cliente = clienteService.save(cliente);
+        servico = geradorDeServico();
         servicoSalvo = servicoService.save(servico);
         Assertions.assertThat(servicoSalvo).isNotNull();
     }
@@ -39,8 +39,8 @@ public class ServicoRepositoryTest {
     @DisplayName("Deve deletar um serviço")
     public void deveDeletarServico() {
         cliente = geradorDeCliente();
-        servico = geradorDeServico();
         cliente = clienteService.save(cliente);
+        servico = geradorDeServico();
         servicoService.save(servico);
         servicoService.deleteById(servico.getId());
         RuntimeException runtimeException = org.junit.jupiter.api.Assertions
@@ -73,8 +73,8 @@ public class ServicoRepositoryTest {
     @DisplayName("Deve buscar serviço")
     public void deveBuscarServico() {
         cliente = geradorDeCliente();
-        servico = geradorDeServico();
         cliente = clienteService.save(cliente);
+        servico = geradorDeServico();
         servico = servicoService.save(servico);
         servicoSalvo = servicoService.findById(servico.getId());
         Assertions.assertThat(servicoSalvo).isNotNull();
@@ -84,6 +84,7 @@ public class ServicoRepositoryTest {
     @DisplayName("Deve atualizar um serviço")
     public void deveAtualizarUmServico() {
         cliente = geradorDeCliente();
+        cliente = clienteService.save(cliente);
         servico = geradorDeServico();
         servicoSalvo = servicoService.save(servico);
         servicoSalvo.setDescricao("Teste2");
