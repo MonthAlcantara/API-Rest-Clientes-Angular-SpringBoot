@@ -1,26 +1,22 @@
-2020-08-22 14:59:30.090  INFO 972 --- [main] i.g.monthalcantara.ClientesApplication   : Starting ClientesApplication on Montival with PID 972 (C:\projetos\clientes\backend\target\classes started by Montival in C:\projetos\clientes)
-2020-08-22 14:59:30.101  INFO 972 --- [main] i.g.monthalcantara.ClientesApplication   : No active profile set, falling back to default profiles: default
-2020-08-22 14:59:33.951  INFO 972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-08-22 14:59:34.139  INFO 972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 172ms. Found 2 repository interfaces.
-2020-08-22 14:59:35.099  INFO 972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$503ddb0e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-08-22 14:59:36.097  INFO 972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-08-22 14:59:36.168  INFO 972 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-22 14:59:36.169  INFO 972 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2020-08-22 14:59:36.532  INFO 972 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-22 14:59:36.533  INFO 972 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6219 ms
-2020-08-22 14:59:37.318  INFO 972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-08-22 14:59:37.718  INFO 972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-08-22 14:59:37.905  INFO 972 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-08-22 14:59:38.249  INFO 972 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
-2020-08-22 14:59:38.639  INFO 972 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-08-22 14:59:39.191  INFO 972 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-08-22 14:59:40.847  INFO 972 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-08-22 14:59:40.858  INFO 972 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-08-22 14:59:42.550  INFO 972 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-22 14:59:42.701  WARN 972 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-08-22 14:59:44.108  INFO 972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-08-22 14:59:44.119  INFO 972 --- [main] i.g.monthalcantara.ClientesApplication   : Started ClientesApplication in 15.187 seconds (JVM running for 16.75)
-2020-08-22 14:59:55.279  INFO 972 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-22 14:59:55.281  INFO 972 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-22 14:59:55.326  INFO 972 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 44 ms
-2020-08-22 14:59:55.922  INFO 972 --- [http-nio-8080-exec-3] i.g.m.c.controller.ClienteController     : Salvando um novo cliente
+2020-09-22 17:14:05.265  INFO 7500 --- [main] i.g.monthalcantara.ClientesApplication   : Starting ClientesApplication on Montival with PID 7500 (C:\projetos\clientes\backend\target\classes started by Montival in C:\projetos\clientes)
+2020-09-22 17:14:05.296  INFO 7500 --- [main] i.g.monthalcantara.ClientesApplication   : No active profile set, falling back to default profiles: default
+2020-09-22 17:14:07.452  INFO 7500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-22 17:14:07.687  INFO 7500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 219ms. Found 2 repository interfaces.
+2020-09-22 17:14:08.390  INFO 7500 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2439416b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-22 17:14:09.187  INFO 7500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-22 17:14:09.234  INFO 7500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-22 17:14:09.234  INFO 7500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-09-22 17:14:09.655  INFO 7500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-22 17:14:09.655  INFO 7500 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4078 ms
+2020-09-22 17:14:10.343  INFO 7500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-22 17:14:10.680  INFO 7500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-22 17:14:10.852  INFO 7500 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-22 17:14:10.993  INFO 7500 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-09-22 17:14:11.290  INFO 7500 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-22 17:14:11.696  INFO 7500 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-09-22 17:14:13.009  INFO 7500 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-22 17:14:13.024  INFO 7500 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-22 17:14:14.284  INFO 7500 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-22 17:14:14.378  WARN 7500 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-22 17:14:15.034  INFO 7500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-22 17:14:15.034  INFO 7500 --- [main] i.g.monthalcantara.ClientesApplication   : Started ClientesApplication in 10.941 seconds (JVM running for 12.64)
