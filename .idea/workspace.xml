@@ -22,17 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b08a6ef-e22a-4975-8e18-39088be45aff" name="Default Changelist" comment="Renomeado arquivo de configuracao do travis ci">
-      <change afterPath="$PROJECT_DIR$/appfile.log.2020-08-22.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/appfile.log.2020-08-25.0.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/appfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/appfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/appfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/io/github/monthalcantara/ClientesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/io/github/monthalcantara/ClientesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/ClientesApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/ClientesApplication.class" afterDir="false" />
+    <list default="true" id="7b08a6ef-e22a-4975-8e18-39088be45aff" name="Default Changelist" comment="configuração travis">
       <change beforePath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/controller/ClienteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/test-classes/META-INF/clientes.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +304,28 @@
       <option name="project" value="LOCAL" />
       <updated>1598378821795</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Atualização arquivo de log">
+      <created>1600805708890</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1600805708890</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Atualização classe principal">
+      <created>1600805964173</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1600805964173</updated>
+    </task>
+    <task id="LOCAL-00024" summary="configuração travis">
+      <created>1600806004580</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1600806004580</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -350,7 +362,10 @@
     <MESSAGE value="Adicionado gitignore" />
     <MESSAGE value="Adicionada configuracao do travis ci" />
     <MESSAGE value="Renomeado arquivo de configuracao do travis ci" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renomeado arquivo de configuracao do travis ci" />
+    <MESSAGE value="Atualização arquivo de log" />
+    <MESSAGE value="Atualização classe principal" />
+    <MESSAGE value="configuração travis" />
+    <option name="LAST_COMMIT_MESSAGE" value="configuração travis" />
   </component>
   <component name="WindowStateProjectService">
     <state x="363" y="98" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595518012931">
@@ -367,44 +382,44 @@
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728/1366.74.1920.1040@0.0.1366.728" timestamp="1598095588871" />
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595681485843" />
     <state x="651" y="167" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596739773090" />
-    <state width="1322" height="241" key="GridCell.Tab.0.bottom" timestamp="1598815272287">
+    <state width="1322" height="241" key="GridCell.Tab.0.bottom" timestamp="1600805669789">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1322" height="449" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.74.1920.1040@0.0.1366.728" timestamp="1597846004735" />
     <state width="1876" height="379" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.74.1920.1040@1366.74.1920.1040" timestamp="1598119876257" />
-    <state width="1322" height="241" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598815272287" />
+    <state width="1322" height="241" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600805669789" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596742007617" />
-    <state width="1322" height="241" key="GridCell.Tab.0.center" timestamp="1598815272287">
+    <state width="1322" height="241" key="GridCell.Tab.0.center" timestamp="1600805669789">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1322" height="449" key="GridCell.Tab.0.center/0.0.1366.728/1366.74.1920.1040@0.0.1366.728" timestamp="1597846004734" />
     <state width="1876" height="379" key="GridCell.Tab.0.center/0.0.1366.728/1366.74.1920.1040@1366.74.1920.1040" timestamp="1598119876257" />
-    <state width="1322" height="241" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598815272287" />
+    <state width="1322" height="241" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600805669789" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596742007617" />
-    <state width="1322" height="241" key="GridCell.Tab.0.left" timestamp="1598815272286">
+    <state width="1322" height="241" key="GridCell.Tab.0.left" timestamp="1600805669789">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1322" height="449" key="GridCell.Tab.0.left/0.0.1366.728/1366.74.1920.1040@0.0.1366.728" timestamp="1597846004734" />
     <state width="1876" height="379" key="GridCell.Tab.0.left/0.0.1366.728/1366.74.1920.1040@1366.74.1920.1040" timestamp="1598119876257" />
-    <state width="1322" height="241" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598815272286" />
+    <state width="1322" height="241" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600805669789" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596742007617" />
-    <state width="1322" height="241" key="GridCell.Tab.0.right" timestamp="1598815272287">
+    <state width="1322" height="241" key="GridCell.Tab.0.right" timestamp="1600805669789">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1322" height="449" key="GridCell.Tab.0.right/0.0.1366.728/1366.74.1920.1040@0.0.1366.728" timestamp="1597846004734" />
     <state width="1876" height="379" key="GridCell.Tab.0.right/0.0.1366.728/1366.74.1920.1040@1366.74.1920.1040" timestamp="1598119876257" />
-    <state width="1322" height="241" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598815272287" />
+    <state width="1322" height="241" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600805669789" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596742007617" />
     <state x="270" y="0" key="SettingsEditor" timestamp="1596739392138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595681391981" />
     <state x="270" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596739392138" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1598378824155">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1600806007221">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.74.1920.1040@0.0.1366.728" timestamp="1597845654971" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598378824155" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600806007221" />
     <state x="362" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596751520375">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
