@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,8 +22,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b08a6ef-e22a-4975-8e18-39088be45aff" name="Default Changelist" comment="Adicionada configuracao do travis ci">
+    <list default="true" id="7b08a6ef-e22a-4975-8e18-39088be45aff" name="Default Changelist" comment="Renomeado arquivo de configuracao do travis ci">
+      <change afterPath="$PROJECT_DIR$/appfile.log.2020-08-22.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/appfile.log.2020-08-25.0.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/appfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/appfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/appfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/io/github/monthalcantara/ClientesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/io/github/monthalcantara/ClientesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/ClientesApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/ClientesApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/io/github/monthalcantara/clientes/controller/ClienteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/test-classes/META-INF/clientes.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +48,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.4\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1f0xmUeFtu2FPAlLauFFICx7eJv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -56,7 +75,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="JUnit.All in clientes">
+  <component name="RunManager" selected="Application.ClientesApplication">
     <configuration name="ClientesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.monthalcantara.ClientesApplication" />
       <module name="clientes" />
@@ -127,14 +146,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClientesApplication" />
         <item itemvalue="JUnit.All in clientes" />
         <item itemvalue="JUnit.ServicoRepositoryTest.deveCriarServico" />
-        <item itemvalue="Application.ClientesApplication" />
         <item itemvalue="JUnit.ServicoRepositoryTest" />
         <item itemvalue="JUnit.ClienteControllerTest.naoDeveCriarClienteInvalidoTest" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -286,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598376138093</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Renomeado arquivo de configuracao do travis ci">
+      <created>1598378821795</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1598378821795</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,7 +349,8 @@
     <MESSAGE value="Refatoracao e formatacao" />
     <MESSAGE value="Adicionado gitignore" />
     <MESSAGE value="Adicionada configuracao do travis ci" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionada configuracao do travis ci" />
+    <MESSAGE value="Renomeado arquivo de configuracao do travis ci" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renomeado arquivo de configuracao do travis ci" />
   </component>
   <component name="WindowStateProjectService">
     <state x="363" y="98" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595518012931">
@@ -339,44 +367,44 @@
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728/1366.74.1920.1040@0.0.1366.728" timestamp="1598095588871" />
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595681485843" />
     <state x="651" y="167" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596739773090" />
-    <state width="1322" height="241" key="GridCell.Tab.0.bottom" timestamp="1598374147411">
+    <state width="1322" height="241" key="GridCell.Tab.0.bottom" timestamp="1598815272287">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1322" height="449" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.74.1920.1040@0.0.1366.728" timestamp="1597846004735" />
     <state width="1876" height="379" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.74.1920.1040@1366.74.1920.1040" timestamp="1598119876257" />
-    <state width="1322" height="241" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598374147411" />
+    <state width="1322" height="241" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598815272287" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596742007617" />
-    <state width="1322" height="241" key="GridCell.Tab.0.center" timestamp="1598374147411">
+    <state width="1322" height="241" key="GridCell.Tab.0.center" timestamp="1598815272287">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1322" height="449" key="GridCell.Tab.0.center/0.0.1366.728/1366.74.1920.1040@0.0.1366.728" timestamp="1597846004734" />
     <state width="1876" height="379" key="GridCell.Tab.0.center/0.0.1366.728/1366.74.1920.1040@1366.74.1920.1040" timestamp="1598119876257" />
-    <state width="1322" height="241" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598374147411" />
+    <state width="1322" height="241" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598815272287" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596742007617" />
-    <state width="1322" height="241" key="GridCell.Tab.0.left" timestamp="1598374147411">
+    <state width="1322" height="241" key="GridCell.Tab.0.left" timestamp="1598815272286">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1322" height="449" key="GridCell.Tab.0.left/0.0.1366.728/1366.74.1920.1040@0.0.1366.728" timestamp="1597846004734" />
     <state width="1876" height="379" key="GridCell.Tab.0.left/0.0.1366.728/1366.74.1920.1040@1366.74.1920.1040" timestamp="1598119876257" />
-    <state width="1322" height="241" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598374147411" />
+    <state width="1322" height="241" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598815272286" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596742007617" />
-    <state width="1322" height="241" key="GridCell.Tab.0.right" timestamp="1598374147411">
+    <state width="1322" height="241" key="GridCell.Tab.0.right" timestamp="1598815272287">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1322" height="449" key="GridCell.Tab.0.right/0.0.1366.728/1366.74.1920.1040@0.0.1366.728" timestamp="1597846004734" />
     <state width="1876" height="379" key="GridCell.Tab.0.right/0.0.1366.728/1366.74.1920.1040@1366.74.1920.1040" timestamp="1598119876257" />
-    <state width="1322" height="241" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598374147411" />
+    <state width="1322" height="241" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598815272287" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596742007617" />
     <state x="270" y="0" key="SettingsEditor" timestamp="1596739392138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="192" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595681391981" />
     <state x="270" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596739392138" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1598376141376">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1598378824155">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.74.1920.1040@0.0.1366.728" timestamp="1597845654971" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598376141376" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598378824155" />
     <state x="362" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596751520375">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
